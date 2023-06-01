@@ -24,7 +24,7 @@ TEST_F(AccountFixture, Withdraw) {
 	EXPECT_EQ(9400, account.getBalance());
 }
 
-TEST_F(AccountFixture, bogli) {
-	account.bogli(5);
+TEST_F(AccountFixture, setter) {
+	account.setter(5);
 	EXPECT_EQ(10500, account.getBalance());
 }

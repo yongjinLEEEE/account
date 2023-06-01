@@ -21,11 +21,13 @@ public:
 		balance -= money;
 	}
 
-	void bogli(int percent)
+	void setter(int percent)
 	{
-		balance *= 1 + (float)percent / 100;
+		this->interrest = 1 + (float)percent/100;
+		balance *= this->interrest;
 	}
 
 private:
 	int balance;
+	float interrest;
 };
