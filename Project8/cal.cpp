@@ -21,6 +21,11 @@ public:
 		balance -= money;
 	}
 
+	void bogli(int percent)
+	{
+		balance *= 1 + (float)percent / 100;
+	}
+
 private:
 	int balance;
 };
